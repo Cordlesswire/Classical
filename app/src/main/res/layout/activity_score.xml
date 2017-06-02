@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/trophy"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context="com.junior.maduna.classicalquiz.Score">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/enter_your_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="26dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="221dp"
+            android:hint="Enter Your Name"
+            android:textColorHint="@color/colorPrimary"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15dp" />
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btnreplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:text="Replay"
+                android:layout_margin="25dp"
+                android:backgroundTint="@android:color/black"
+                android:textColor="@android:color/white"/>
+
+            <Button
+                android:id="@+id/btnexit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:text="Exit"
+                android:layout_margin="25dp"
+                android:backgroundTint="@android:color/black"
+                android:textColor="@android:color/white"/>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="36dp"
+                android:text="Submit"
+                android:backgroundTint="@android:color/black"
+                android:textColor="@android:color/white"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

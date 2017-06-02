@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    tools:context="com.junior.maduna.classicalquiz.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="top"
+            android:src="@drawable/logo" />
+
+        <Button
+            android:id="@+id/btnHealth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:text="health"
+            android:onClick="openHealthACt"
+            android:backgroundTint="@android:color/black"
+            android:textColor="@android:color/white"
+            android:layout_weight="1"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/btnScience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:text="science"
+            android:onClick="openScienceACt"
+            android:backgroundTint="@android:color/black"
+            android:textColor="@android:color/white"
+            android:layout_weight="1"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/btnTechnology"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:text="@string/technology"
+            android:onClick="openTechnologyACt"
+            android:backgroundTint="@android:color/black"
+            android:textColor="@android:color/white"
+            android:layout_weight="1"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:id="@+id/btnMusic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:text="@string/music"
+            android:onClick="openMusicACt"
+            android:backgroundTint="@android:color/black"
+            android:textColor="@android:color/white"
+            android:layout_weight="1"
+            android:layout_margin="10dp" />
+
+    </LinearLayout>
+</ScrollView>

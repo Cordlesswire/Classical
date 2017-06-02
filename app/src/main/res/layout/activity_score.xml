@@ -16,13 +16,11 @@
 
 
         <EditText
-            android:id="@+id/enter_your_name"
+            android:id="@+id/user_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="26dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:layout_marginStart="26dp"
             android:layout_marginTop="221dp"
             android:hint="Enter Your Name"
@@ -38,35 +36,38 @@
             android:layout_weight="1">
 
             <Button
-                android:id="@+id/btnreplay"
+                android:id="@+id/btnReplay"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentBottom="true"
                 android:text="Replay"
+                android:onClick="replayApp"
                 android:layout_margin="25dp"
                 android:backgroundTint="@android:color/black"
                 android:textColor="@android:color/white"/>
 
             <Button
-                android:id="@+id/btnexit"
+                android:id="@+id/btnExit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentBottom="true"
                 android:text="Exit"
+                android:onClick="exitApp"
                 android:layout_margin="25dp"
                 android:backgroundTint="@android:color/black"
                 android:textColor="@android:color/white"/>
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/submitName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="36dp"
                 android:text="Submit"
+                android:onClick="submitName"
                 android:backgroundTint="@android:color/black"
                 android:textColor="@android:color/white"/>
 

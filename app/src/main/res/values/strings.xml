@@ -1,84 +1,43 @@
 <resources>
     <string name="app_name">Classical Quiz</string>
 
-    <!-- QUESTION 1 -->
-    <string name="q1">What are the health benefits of Cashews?</string>
-    <string name="q1a1">Strengthens teeth</string>
-    <string name="q1a2">Good Source of Protein</string>
-    <string name="q1a3">Good for losing weight</string>
-    <string name="q1a4">None of the Above</string>
+    <!-- THESE ARE STRINGS WE"LL USE IN THE .JAVA FILE FOR EASE OF ACCESS-->
+    <string name="score_summary_name">Name: </string>
 
-    <!-- QUESTION 2 -->
-    <string name="q2">How many continents are there?</string>
-    <string name="q2a1">Five</string>
-    <string name="q2a2">Six</string>
-    <string name="q2a3">Seven</string>
-    <string name="q2a4">Eight</string>
 
-    <!-- QUESTION 3 -->
-    <string name="q3">On what continent can you find Egypt?</string>
-    <string name="q3a1">Write your answer here...</string>
-    <string name="submit">submit</string>
-    <string name="q3_required">Answer is required!</string>
-    <string name="africa_lowcase">africa</string>
-    <string name="africa_caps">AFRICA</string>
-    <string name="africa_sentence">Africa</string>
 
-    <!-- QUESTION 4 -->
-    <string name="q4">Number of Earth\'s oceans?</string>
-    <string name="q4a1">Five</string>
-    <string name="q4a2">Six</string>
-    <string name="q4a3">Seven</string>
-    <string name="q4a4">Four</string>
 
-    <!-- QUESTION 5 -->
-    <string name="q5">What is the most populated continent in the world?</string>
-    <string name="q5a1">North America</string>
-    <string name="q5a2">Asia</string>
-    <string name="q5a3">Europe</string>
-    <string name="q5a4">America</string>
+    <!-- QUESTIONS START HERE-->
+    <string name="quiz_one_question">What is the main nutrient in Cashews?</string>
+    <string name="first_nut">A. copper</string>
+    <string name="second_nut">B. phosphorus</string>
+    <string name="third_nut">C. magnesium</string>
 
-    <!-- QUESTION 6 -->
-    <string name="q6">Complete the sentence: US consists of __ state(s), __ federal district(s), __ territories.</string>
-    <string name="q6a1">50, 1, 5</string>
-    <string name="q6a2">50, 1, 4</string>
-    <string name="q6a3">50, 2, 4</string>
-    <string name="q6a4">51, 1, 5</string>
+    <string name="quiz_two_question"> ________ is an ancient superfood that has 5 times the calcium as milk and has twice the protein \n more than any other grain or seed  </string>
+    <string name="seed_one">A.quinoa</string>
+    <string name="seed_two">B.lentils</string>
+    <string name="seed_three">C.chia seeds</string>
 
-    <!-- QUESTION 7 -->
-    <string name="q7">How many internationally recognised sovereign states are there in Europe?</string>
-    <string name="q7a1">45</string>
-    <string name="q7a2">55</string>
-    <string name="q7a3">40</string>
-    <string name="q7a4">50</string>
+    <string name="quiz_three_question">Which root from Peru is used to increase stamina and strength? \n Sometimes referred to as "Peruvian Ginseng" </string>
+    <string name="ginger">A.ginger</string>
+    <string name="ginseng">B.ginseng</string>
+    <string name="maca">C.maca</string>
 
-    <!-- QUESTION 8 -->
-    <string name="q8">Which of these four volcanoes is located in Naples, Italy?</string>
-    <string name="q8a1">Stromboli</string>
-    <string name="q8a2">Mount Etna</string>
-    <string name="q8a3">Mount Vesuvius</string>
-    <string name="q8a4">Santa Maria</string>
+    <string name="quiz_four_question">How many years did the French Revolution Last?</string>
+    <string name="date_8">A.8</string>
+    <string name="date_10">B.10</string>
+    <string name="date_9">C.9</string>
 
-    <!-- QUESTION 9 -->
-    <string name="q9">The Dead Sea is a salt lake located in Africa and bordered by Israel to the east and Egypt to the west.</string>
-    <string name="yes">true</string>
-    <string name="no">false</string>
+    <string name="quiz_five_question">When did the 1ST invasion of German during the World War II happen?</string>
+    <string name="date_1.09.1939">A.1.09.1939</string>
+    <string name="date1.09.1940">B.1.09.1940</string>
+    <string name="date03.04.1941">C.03.04.1941</string>
 
-    <!-- QUESTION 10 -->
-    <string name="q10">Which of these four countries became founders of NATO by signing a North Atlantic Treaty in 1949?</string>
-    <string name="q10a1">United Kingdom</string>
-    <string name="q10a2">Croatia</string>
-    <string name="q10a3">United States of America</string>
-    <string name="q10a4">Greece</string>
 
-    <!-- RESULTS BUTTON -->
-    <string name="results_button">Results</string>
 
-    <!-- REPLAY BUTTON -->
-    <string name="replay_button">replay</string>
 
-    <!-- EXIT BUTTON -->
-    <string name="exit_button">exit</string>
+
+
 
     <!-- FINAL RESULTS -->
     <string name="congratulations_title">Congratulations!</string>

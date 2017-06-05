@@ -10,9 +10,9 @@
 
     <!-- Question 1 -->
     <ScrollView
+        android:id="@+id/question1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/question1"
         android:visibility="visible">
 
         <LinearLayout
@@ -79,9 +79,9 @@
 
     <!-- Question 2 -->
     <ScrollView
+        android:id="@+id/question2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/question2"
         android:visibility="gone">
 
         <!-- Here we hide the scrollview because we only the user to see one question at a time -->
@@ -150,9 +150,9 @@
 
     <!-- Question 3 -->
     <ScrollView
+        android:id="@+id/question3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/question3"
         android:visibility="gone">
 
         <LinearLayout
@@ -202,8 +202,6 @@
                     android:layout_height="wrap_content"
                     android:text="@string/q5_3" />
             </RadioGroup>
-
-            <!-- Still need to implement the score hence it does not recognise the "score" method-->
 
             <Button
                 android:layout_width="wrap_content"

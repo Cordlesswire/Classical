@@ -41,6 +41,8 @@ public class Score extends AppCompatActivity {
 
 
 
+                //Display the overall percentage of the Game and have a certain image pop-up if the user has reached a certain level
+
 
 
 

@@ -202,7 +202,6 @@
                     android:text="@string/q5_3" />
             </RadioGroup>
 
-            <!-- Still need to implement the score hence it does not recognise the "score" method-->
 
             <Button
                 android:layout_width="wrap_content"

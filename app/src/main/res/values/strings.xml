@@ -8,31 +8,83 @@
 
 
     <!-- QUESTIONS START HERE-->
+
+            <!-- QUESTIONS FOR THE HEALTH CATEGORY-->
     <string name="quiz_one_question">What is the main nutrient in Cashews?</string>
-    <string name="first_nut">A. copper</string>
-    <string name="second_nut">B. phosphorus</string>
-    <string name="third_nut">C. magnesium</string>
+    <string name="q1_1">A. copper</string>
+    <string name="q1_2">B. phosphorus</string>
+    <string name="q1_3">C. magnesium</string>
 
-    <string name="quiz_two_question"> ________ is an ancient superfood that has 5 times the calcium as milk and has twice the protein \n more than any other grain or seed  </string>
-    <string name="seed_one">A.quinoa</string>
-    <string name="seed_two">B.lentils</string>
-    <string name="seed_three">C.chia seeds</string>
+    <string name="quiz_two_question"> ________ is an ancient superfood that has 5 times the calcium as milk and has twice the protein more than any other grain or seed  </string>
+    <string name="q2_1">A.quinoa</string>
+    <string name="q2_2">B.lentils</string>
+    <string name="q2_3">C.chia seeds</string>
 
-    <string name="quiz_three_question">Which root from Peru is used to increase stamina and strength? \n Sometimes referred to as "Peruvian Ginseng" </string>
-    <string name="ginger">A.ginger</string>
-    <string name="ginseng">B.ginseng</string>
-    <string name="maca">C.maca</string>
+    <string name="quiz_three_question">Which root from Peru is used to increase stamina and strength? Sometimes referred to as "Peruvian Ginseng" </string>
+    <string name="q3_1">A.ginger</string>
+    <string name="q3_2">B.ginseng</string>
+    <string name="q3_3">C.maca</string>
 
-    <string name="quiz_four_question">How many years did the French Revolution Last?</string>
-    <string name="date_8">A.8</string>
-    <string name="date_10">B.10</string>
-    <string name="date_9">C.9</string>
+    <string name="quiz_four_question">Coconut Oil has antifungal, antibacterial as well as antioxideant properties but it is also good for _______</string>
+    <string name="q4_1">A. Hair and Skin</string>
+    <string name="q4_2">B. Aches and Pains</string>
+    <string name="q4_3">C. Stamina</string>
 
-    <string name="quiz_five_question">When did the 1ST invasion of German during the World War II happen?</string>
-    <string name="date_1.09.1939">A.1.09.1939</string>
-    <string name="date1.09.1940">B.1.09.1940</string>
-    <string name="date03.04.1941">C.03.04.1941</string>
+    <string name="quiz_five_question">______ helps control your sleep and wake cycles. </string>
+    <string name="q5_1">A. Serotonin</string>
+    <string name="q5_2">B. Melatonin</string>
+    <string name="q5_3">C. Tryptophan</string>
 
+
+      <!-- QUESTIONS FOR THE SCIENCE CATEGORY-->
+    <string name="science_quiz_one_question">What is the main nutrient in Cashews?</string>
+    <string name="qs1_1">A. copper</string>
+    <string name="qs1_2">B. phosphorus</string>
+    <string name="qs1_3">C. magnesium</string>
+
+    <string name="science_quiz_two_question"> ________ is an ancient superfood that has 5 times the calcium as milk and has twice the protein more than any other grain or seed  </string>
+    <string name="qs2_1">A.quinoa</string>
+    <string name="qs2_2">B.lentils</string>
+    <string name="qs2_3">C.chia seeds</string>
+
+    <string name="science_quiz_three_question">Which root from Peru is used to increase stamina and strength? Sometimes referred to as "Peruvian Ginseng" </string>
+    <string name="qs3_1">A.ginger</string>
+    <string name="qs3_2">B.ginseng</string>
+    <string name="qs3_3">C.maca</string>
+
+
+         <!-- QUESTIONS FOR THE TECHNOLOGY CATEGORY-->
+    <string name="technology_quiz_one_question">What is the main nutrient in Cashews?</string>
+    <string name="qt1_1">A. copper</string>
+    <string name="qt1_2">B. phosphorus</string>
+    <string name="qt1_3">C. magnesium</string>
+
+    <string name="technology_quiz_two_question"> ________ is an ancient superfood that has 5 times the calcium as milk and has twice the protein more than any other grain or seed  </string>
+    <string name="qt2_1">A.quinoa</string>
+    <string name="qt2_2">B.lentils</string>
+    <string name="qt2_3">C.chia seeds</string>
+
+    <string name="technology_quiz_three_question">Which root from Peru is used to increase stamina and strength? Sometimes referred to as "Peruvian Ginseng" </string>
+    <string name="qt3_1">A.ginger</string>
+    <string name="qt3_2">B.ginseng</string>
+    <string name="qt3_3">C.maca</string>
+
+
+        <!-- QUESTIONS FOR THE MUSIC CATEGORY-->
+    <string name="music_quiz_one_question">What is the main nutrient in Cashews?</string>
+    <string name="qm1_1">A. copper</string>
+    <string name="qm1_2">B. phosphorus</string>
+    <string name="qm1_3">C. magnesium</string>
+
+    <string name="music_quiz_two_question"> ________ is an ancient superfood that has 5 times the calcium as milk and has twice the protein more than any other grain or seed  </string>
+    <string name="qm2_1">A.quinoa</string>
+    <string name="qm2_2">B.lentils</string>
+    <string name="qm2_3">C.chia seeds</string>
+
+    <string name="music_quiz_three_question">Which root from Peru is used to increase stamina and strength? Sometimes referred to as "Peruvian Ginseng" </string>
+    <string name="qm3_1">A.ginger</string>
+    <string name="qm3_2">B.ginseng</string>
+    <string name="qm3_3">C.maca</string>
 
 
 

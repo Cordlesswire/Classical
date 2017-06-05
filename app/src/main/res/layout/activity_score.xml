@@ -42,19 +42,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentBottom="true"
                 android:text="Replay"
-                android:onClick="replayApp"
-                android:layout_margin="25dp"
-                android:backgroundTint="@android:color/black"
-                android:textColor="@android:color/white"/>
-
-            <Button
-                android:id="@+id/btnExit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:text="Exit"
-                android:onClick="exitApp"
+                android:onClick="replayGame"
                 android:layout_margin="25dp"
                 android:backgroundTint="@android:color/black"
                 android:textColor="@android:color/white"/>
@@ -63,11 +51,11 @@
                 android:id="@+id/submitName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="36dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
                 android:text="Submit"
                 android:onClick="submitName"
+                android:layout_margin="25dp"
                 android:backgroundTint="@android:color/black"
                 android:textColor="@android:color/white"/>
 

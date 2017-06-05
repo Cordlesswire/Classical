@@ -10,15 +10,14 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:id="@+id/question1"
         android:visibility="visible">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:id="@+id/linearlayout_question1"
-            android:orientation="vertical"
-            android:visibility="visible">
+            android:orientation="vertical">
 
 
             <View
@@ -31,7 +30,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
+                android:layout_margin="15dp"
                 android:text="@string/quiz_one_question"
                 android:textColor="@color/colorPrimary" />
 
@@ -47,19 +46,19 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:tag="correct"
-                    android:text="@string/first_nut" />
+                    android:text="@string/q1_1" />
 
                 <RadioButton
                     android:id="@+id/second_nutr"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/second_nut" />
+                    android:text="@string/q1_2" />
 
                 <RadioButton
                     android:id="@+id/third_nutri"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/third_nut" />
+                    android:text="@string/q1_3" />
             </RadioGroup>
 
             <Button
@@ -69,8 +68,8 @@
                 android:layout_margin="25dp"
                 android:layout_weight="0"
                 android:backgroundTint="@android:color/black"
-                android:onClick="questionOne"
-                android:text="Submit"
+                android:onClick="questionTwo"
+                android:text="Next"
                 android:textColor="@android:color/white" />
 
         </LinearLayout>
@@ -80,17 +79,17 @@
     <!-- Question 2 -->
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:id="@+id/question2"
+        android:visibility="gone">
         <!-- Here we hide the scrollview because we only the user to see one question at a time -->
 
 
         <LinearLayout
-            android:id="@+id/linearlayout_question2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:orientation="vertical"
-            android:visibility="gone">
+            android:orientation="vertical">
 
 
             <View
@@ -103,7 +102,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
+                android:layout_margin="15dp"
                 android:text="@string/quiz_two_question"
                 android:textColor="@color/colorPrimary" />
 
@@ -118,20 +117,20 @@
                     android:id="@+id/superfood1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/seed_one" />
+                    android:text="@string/q2_1" />
 
                 <RadioButton
                     android:id="@+id/superfood2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/seed_two" />
+                    android:text="@string/q2_2" />
 
                 <RadioButton
                     android:id="@+id/superfood3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:tag="correct"
-                    android:text="@string/seed_three" />
+                    android:text="@string/q2_3" />
             </RadioGroup>
 
             <Button
@@ -141,8 +140,8 @@
                 android:layout_margin="25dp"
                 android:layout_weight="0"
                 android:backgroundTint="@android:color/black"
-                android:onClick="score"
-                android:text="Submit"
+                android:onClick="questionThree"
+                android:text="Next"
                 android:textColor="@android:color/white" />
 
         </LinearLayout>
@@ -151,17 +150,18 @@
     <!-- Question 3 -->
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:id="@+id/question3"
+        android:visibility="gone">
+
         <!-- Here we hide the scrollview because we only the user to see one question at a time -->
 
 
         <LinearLayout
-            android:id="@+id/linearlayout_question3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:orientation="vertical"
-            android:visibility="gone">
+            android:orientation="vertical">
 
 
             <View
@@ -174,7 +174,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
+                android:layout_margin="15dp"
                 android:text="@string/quiz_three_question"
                 android:textColor="@color/colorPrimary" />
 
@@ -189,24 +189,22 @@
                     android:id="@+id/roots1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/ginger" />
+                    android:text="@string/q3_1" />
 
                 <RadioButton
                     android:id="@+id/roots2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/ginseng" />
+                    android:text="@string/q3_2" />
 
                 <RadioButton
                     android:id="@+id/roots3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:tag="correct"
-                    android:text="@string/maca" />
+                    android:text="@string/q3_3" />
             </RadioGroup>
 
-            <!-- Still need to impliment the score hence it does not recognise the "score" method-->
-            <!-- I only want the submit button on the final questions activity but now I need to use it as a next button that the user needs to click to go to the next lesson -->
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -214,9 +212,149 @@
                 android:layout_margin="25dp"
                 android:layout_weight="0"
                 android:backgroundTint="@android:color/black"
-                android:onClick="score"
+                android:onClick="questionFour"
+                android:text="Next"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Question 4 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/question4"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_margin="15dp"
+                android:layout_weight="2"
+                android:background="@drawable/oil" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="@string/quiz_four_question"
+                android:textColor="@color/colorPrimary" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/q4_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tag="correct"
+                    android:text="@string/q4_1" />
+
+                <RadioButton
+                    android:id="@+id/q4_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/q4_2" />
+
+                <RadioButton
+                    android:id="@+id/q4_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/q4_3" />
+            </RadioGroup>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="25dp"
+                android:layout_weight="0"
+                android:backgroundTint="@android:color/black"
+                android:onClick="questionFive"
+                android:text="Next"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Question 5 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/question5"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_margin="15dp"
+                android:layout_weight="2"
+                android:background="@drawable/serotonin" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="@string/quiz_five_question"
+                android:textColor="@color/colorPrimary" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupFive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/q5_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/q5_1" />
+
+                <RadioButton
+                    android:id="@+id/q5_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tag="correct"
+                    android:text="@string/q5_2" />
+
+                <RadioButton
+                    android:id="@+id/q5_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/q5_3" />
+            </RadioGroup>
+
+            <!-- Still need to implement the score hence it does not recognise the "score" method-->
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="25dp"
+                android:layout_weight="0"
+                android:backgroundTint="@android:color/black"
+                android:onClick="openScoreACt"
                 android:text="Submit"
                 android:textColor="@android:color/white" />
+
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

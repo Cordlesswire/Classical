@@ -1,5 +1,6 @@
 package com.junior.maduna.classicalquiz;
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -50,22 +51,14 @@ public class Score extends AppCompatActivity {
      *  ---- BUTTON - REPLAY APP ----
      */
 
-    public void replayApp(View view){
+    public void replayGame(View view) {
         correctAnswers = 0;
         wrongAnswers = 0;
-        setContentView(R.layout.activity_main);
 
+        Intent i = new Intent(this, MainActivity.class);
+        startActivity(i);
     }
 
 
-
-   /*
-     * When Exit Button is clicked the App Exits
-     *    Its not user friendly to just exit an app so ask the user first if they want to exit using a Notification
-     */
-   public void exitApp(View view){
-       finish();
-       System.exit(0);
-   }
 
 }

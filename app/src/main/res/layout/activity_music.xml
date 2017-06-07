@@ -37,7 +37,7 @@
                 android:textColor="@color/colorPrimary" />
 
             <RadioGroup
-                android:id="@+id/radioGroupOne"
+                android:id="@+id/mradioGroupOne"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -108,7 +108,7 @@
                 android:textColor="@color/colorPrimary" />
 
             <RadioGroup
-                android:id="@+id/radioGroupTwo"
+                android:id="@+id/mradioGroupTwo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -179,7 +179,7 @@
                 android:textColor="@color/colorPrimary" />
 
             <RadioGroup
-                android:id="@+id/radioGroupThree"
+                android:id="@+id/mradioGroupThree"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"

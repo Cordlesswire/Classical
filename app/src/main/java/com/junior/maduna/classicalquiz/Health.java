@@ -48,6 +48,7 @@ public class Health extends AppCompatActivity {
     //Displaying the Score Activity
 
     public void openScoreACt(View view) {
+
         Intent i = new Intent(this, Score.class);
         startActivity(i);
 
@@ -60,7 +61,7 @@ public class Health extends AppCompatActivity {
         //it is the id of the correct answer.
         if (solutionId1 == R.id.q1_1) {
             score++;
-            displayScore(score);
+
         }
 
 
@@ -68,10 +69,10 @@ public class Health extends AppCompatActivity {
         RadioGroup radioGQ2 = (RadioGroup) findViewById(R.id.healthRadioGroupTwo);
         //Get the id of the RadioButton that is checked and save it
         //as an integer variable.
-        int solutionId2 = radioGQ1.getCheckedRadioButtonId();
+        int solutionId2 = radioGQ2.getCheckedRadioButtonId();
         if (solutionId2 == R.id.q2_3) {
             score++;
-            displayScore(score);
+
         }
 
 
@@ -79,18 +80,18 @@ public class Health extends AppCompatActivity {
         RadioGroup radioGQ3 = (RadioGroup) findViewById(R.id.healthRadioGroupThree);
         //Get the id of the RadioButton that is checked and save it
         //as an integer variable.
-        int solutionId3 = radioGQ1.getCheckedRadioButtonId();
+        int solutionId3 = radioGQ3.getCheckedRadioButtonId();
         if (solutionId3 == R.id.q3_3) {
             score++;
-            displayScore(score);
 
-            if (score >= 10) {
-                Toast.makeText(Health.this,
-                        "YOU SCORED A PERFECT " + score + " OUT OF 10.", Toast.LENGTH_LONG).show();
 
-            } else if (score < 10) {
+            if (score >= 3) {
                 Toast.makeText(Health.this,
-                        "You scored " + score + " out of 10.", Toast.LENGTH_LONG).show();
+                        "YOU SCORED A PERFECT " + score + " OUT OF 3.", Toast.LENGTH_LONG).show();
+
+            } else if (score < 3) {
+                Toast.makeText(Health.this,
+                        "You scored " + score + " out of 3.", Toast.LENGTH_LONG).show();
             }
 
 

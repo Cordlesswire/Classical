@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="visible">
+        <!-- Make question one visible to the user and make the rest gone(not visible) -->
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -26,13 +27,13 @@
                 android:layout_height="250dp"
                 android:layout_margin="15dp"
                 android:layout_weight="2"
-                android:background="@drawable/cashews" />
+                android:background="@drawable/dryice" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="15dp"
-                android:text="@string/quiz_one_question"
+                android:text="@string/science_quiz_one_question"
                 android:textColor="@color/colorPrimary" />
 
             <RadioGroup
@@ -43,23 +44,23 @@
                 android:layout_weight="1">
 
                 <RadioButton
-                    android:id="@+id/first_nutr"
+                    android:id="@+id/qs1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qs1_1" />
+
+                <RadioButton
+                    android:id="@+id/qs1_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qs1_2" />
+
+                <RadioButton
+                    android:id="@+id/qs1_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:tag="correct"
-                    android:text="@string/q1_1" />
-
-                <RadioButton
-                    android:id="@+id/second_nutr"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/q1_2" />
-
-                <RadioButton
-                    android:id="@+id/third_nutri"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/q1_3" />
+                    android:text="@string/qs1_3" />
             </RadioGroup>
 
             <Button
@@ -82,8 +83,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone">
-
         <!-- Here we hide the scrollview because we only the user to see one question at a time -->
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -97,40 +98,40 @@
                 android:layout_height="250dp"
                 android:layout_margin="15dp"
                 android:layout_weight="2"
-                android:background="@drawable/maca" />
+                android:background="@drawable/starsir" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="15dp"
-                android:text="@string/quiz_three_question"
+                android:text="@string/science_quiz_two_question"
                 android:textColor="@color/colorPrimary" />
 
             <RadioGroup
-                android:id="@+id/radioGroupThree"
+                android:id="@+id/radioGroupTwo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:layout_weight="1">
 
                 <RadioButton
-                    android:id="@+id/roots1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/q3_1" />
-
-                <RadioButton
-                    android:id="@+id/roots2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/q3_2" />
-
-                <RadioButton
-                    android:id="@+id/roots3"
+                    android:id="@+id/qs2_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:tag="correct"
-                    android:text="@string/q3_3" />
+                    android:text="@string/qs2_1" />
+
+                <RadioButton
+                    android:id="@+id/qs2_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qs2_2" />
+
+                <RadioButton
+                    android:id="@+id/qs2_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qs2_3" />
             </RadioGroup>
 
             <Button
@@ -143,6 +144,7 @@
                 android:onClick="questionThree"
                 android:text="Next"
                 android:textColor="@android:color/white" />
+
         </LinearLayout>
     </ScrollView>
 
@@ -166,40 +168,40 @@
                 android:layout_height="250dp"
                 android:layout_margin="15dp"
                 android:layout_weight="2"
-                android:background="@drawable/serotonin" />
+                android:background="@drawable/galileo" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="15dp"
-                android:text="@string/quiz_five_question"
+                android:text="@string/science_quiz_three_question"
                 android:textColor="@color/colorPrimary" />
 
             <RadioGroup
-                android:id="@+id/radioGroupFive"
+                android:id="@+id/radioGroupThree"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:layout_weight="1">
 
                 <RadioButton
-                    android:id="@+id/q5_1"
+                    android:id="@+id/qs3_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/q5_1" />
+                    android:text="@string/qs3_1" />
 
                 <RadioButton
-                    android:id="@+id/q5_2"
+                    android:id="@+id/qs3_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:tag="correct"
-                    android:text="@string/q5_2" />
+                    android:text="@string/qs3_2" />
 
                 <RadioButton
-                    android:id="@+id/q5_3"
+                    android:id="@+id/qs3_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/q5_3" />
+                    android:text="@string/qs3_3" />
             </RadioGroup>
 
             <Button

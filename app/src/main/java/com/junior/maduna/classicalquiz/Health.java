@@ -16,7 +16,7 @@ public class Health extends AppCompatActivity {
         setContentView(R.layout.activity_health);
     }
 
-
+    //Method to display Question 2
     public void questionTwo(View view) {
         ScrollView layout = (ScrollView) findViewById(R.id.question2);
         ScrollView layout1 = (ScrollView) findViewById(R.id.question1);
@@ -24,7 +24,7 @@ public class Health extends AppCompatActivity {
         layout.setVisibility(View.VISIBLE);
     }
 
-
+   //Method to display Question 3
     public void questionThree(View view) {
         ScrollView layout = (ScrollView) findViewById(R.id.question3);
         ScrollView layout1 = (ScrollView) findViewById(R.id.question2);
@@ -32,20 +32,6 @@ public class Health extends AppCompatActivity {
         layout.setVisibility(View.VISIBLE);
     }
 
-
-    public void questionFour(View view) {
-        ScrollView layout = (ScrollView) findViewById(R.id.question4);
-        ScrollView layout1 = (ScrollView) findViewById(R.id.question3);
-        layout1.setVisibility(View.GONE);
-        layout.setVisibility(View.VISIBLE);
-    }
-
-    public void questionFive(View view) {
-        ScrollView layout = (ScrollView) findViewById(R.id.question5);
-        ScrollView layout1 = (ScrollView) findViewById(R.id.question4);
-        layout1.setVisibility(View.GONE);
-        layout.setVisibility(View.VISIBLE);
-    }
 
 
        //Displaying the Score

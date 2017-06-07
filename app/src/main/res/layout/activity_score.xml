@@ -40,7 +40,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/congratulations_title"
-                android:layout_above="@id/btnReplay"
+                android:layout_alignParentTop="true"
                 android:gravity="top"/>
 
             <Button

@@ -4,12 +4,14 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.RadioGroup;
 import android.widget.ScrollView;
-
+import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class Health extends AppCompatActivity {
-    int score;
+    int score = 0;
 
 
     @Override
@@ -35,11 +37,64 @@ public class Health extends AppCompatActivity {
     }
 
 
+    //Displaying the Score
+    private void displayScore(int score) {
+        TextView display_score = (TextView) findViewById(R.id.display_score);
+        display_score.setText("" + score);
+    }
+
+
+
     //Displaying the Score Activity
 
     public void openScoreACt(View view) {
         Intent i = new Intent(this, Score.class);
         startActivity(i);
+
+        //Access the RadioGroup view and save it to a variable.
+        RadioGroup radioGQ1 = (RadioGroup) findViewById(R.id.healthRadioGroupOne);
+        //Get the id of the RadioButton that is checked and save it
+        //as an integer variable.
+        int solutionId1 = radioGQ1.getCheckedRadioButtonId();
+        //Use if statements to respond based on whether
+        //it is the id of the correct answer.
+        if (solutionId1 == R.id.q1_1) {
+            score++;
+            displayScore(score);
+        }
+
+
+        //Access the RadioGroup view and save it to a variable.
+        RadioGroup radioGQ2 = (RadioGroup) findViewById(R.id.healthRadioGroupTwo);
+        //Get the id of the RadioButton that is checked and save it
+        //as an integer variable.
+        int solutionId2 = radioGQ1.getCheckedRadioButtonId();
+        if (solutionId2 == R.id.q2_3) {
+            score++;
+            displayScore(score);
+        }
+
+
+        //Access the RadioGroup view and save it to a variable.
+        RadioGroup radioGQ3 = (RadioGroup) findViewById(R.id.healthRadioGroupThree);
+        //Get the id of the RadioButton that is checked and save it
+        //as an integer variable.
+        int solutionId3 = radioGQ1.getCheckedRadioButtonId();
+        if (solutionId3 == R.id.q3_3) {
+            score++;
+            displayScore(score);
+
+            if (score >= 10) {
+                Toast.makeText(Health.this,
+                        "YOU SCORED A PERFECT " + score + " OUT OF 10.", Toast.LENGTH_LONG).show();
+
+            } else if (score < 10) {
+                Toast.makeText(Health.this,
+                        "You scored " + score + " out of 10.", Toast.LENGTH_LONG).show();
+            }
+
+
+        }
 
     }
 

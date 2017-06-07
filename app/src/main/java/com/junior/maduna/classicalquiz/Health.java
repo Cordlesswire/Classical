@@ -7,7 +7,9 @@ import android.view.View;
 import android.widget.ScrollView;
 
 
+
 public class Health extends AppCompatActivity {
+    int score;
 
 
     @Override
@@ -24,7 +26,7 @@ public class Health extends AppCompatActivity {
         layout.setVisibility(View.VISIBLE);
     }
 
-   //Method to display Question 3
+    //Method to display Question 3
     public void questionThree(View view) {
         ScrollView layout = (ScrollView) findViewById(R.id.question3);
         ScrollView layout1 = (ScrollView) findViewById(R.id.question2);
@@ -33,19 +35,13 @@ public class Health extends AppCompatActivity {
     }
 
 
-
-       //Displaying the Score
-
-
-
-
-
-
     //Displaying the Score Activity
 
     public void openScoreACt(View view) {
         Intent i = new Intent(this, Score.class);
         startActivity(i);
+
     }
 
 }
+

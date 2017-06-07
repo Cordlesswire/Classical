@@ -12,6 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="visible">
+        <!-- Make question one visible to the user and make the rest gone(not visible) -->
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -35,7 +36,7 @@
                 android:textColor="@color/colorPrimary" />
 
             <RadioGroup
-                android:id="@+id/radioGroupOne"
+                android:id="@+id/healthRadioGroupOne"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -107,7 +108,7 @@
                 android:textColor="@color/colorPrimary" />
 
             <RadioGroup
-                android:id="@+id/radioGroupTwo"
+                android:id="@+id/healthRadioGroupTwo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -177,7 +178,7 @@
                 android:textColor="@color/colorPrimary" />
 
             <RadioGroup
-                android:id="@+id/radioGroupThree"
+                android:id="@+id/healthRadioGroupThree"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"

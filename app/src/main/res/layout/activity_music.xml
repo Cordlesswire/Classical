@@ -273,6 +273,7 @@
                     android:layout_height="wrap_content"
                     android:hint="@string/name_required"
                     android:inputType="text"
+                    android:layout_margin="25dp"
                     android:textColor="@android:color/black"
                     android:textSize="25dp" />
 

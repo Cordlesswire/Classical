@@ -18,7 +18,12 @@ import android.widget.Toast;
 
 public class Music extends AppCompatActivity {
 
-    float score;
+    float score = 0;
+    float total = 3;
+    float percent = 0;
+    float incorrect = 0;
+
+
     Editable userName;
 
     @Override
@@ -26,7 +31,6 @@ public class Music extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_music);
 
-        //make background transperant
         // keyboard doesn't show when activity starts
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
@@ -69,13 +73,7 @@ public class Music extends AppCompatActivity {
 
     //New Score method
     public void scoreDisplay(View view) {
-        float total = 5;
-        float percent = (score * 100.0f) / total;
-        float incorrect = total - score;
 
-
-        TextView quizScore = (TextView) findViewById(R.id.mscore);
-        quizScore.setText( getResources().getString(R.string.congrats) + getResources().getString(R.string.scoreStat) + "\t" +percent + "%" + "\n"+ getResources().getString(R.string.correct_answers) + "\t" + score + "\n" + getResources().getString(R.string.incorrect_answers) + "\t" + incorrect + "\n");
 
 
         RadioGroup radioGQ3 = (RadioGroup) findViewById(R.id.mradioGroupThree);
@@ -125,6 +123,11 @@ public class Music extends AppCompatActivity {
                 }
 
             }
+
+            TextView quizScore = (TextView) findViewById(R.id.mscore);
+            percent = (score * 100) / total;
+            incorrect = total - score;
+            quizScore.setText( getResources().getString(R.string.congrats) + getResources().getString(R.string.scoreStat) + "\t" + percent + " %" + "\n"+ getResources().getString(R.string.correct_answers) + "\t" + score + "\n" + getResources().getString(R.string.incorrect_answers) + "\t" + incorrect + "\n");
 
 
 

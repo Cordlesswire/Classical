@@ -18,7 +18,6 @@ public class Technology extends AppCompatActivity {
     }
 
 
-
     public void questionTwo(View view) {
         ScrollView layout = (ScrollView) findViewById(R.id.question2);
         ScrollView layout1 = (ScrollView) findViewById(R.id.question1);
@@ -36,8 +35,6 @@ public class Technology extends AppCompatActivity {
 
 
     //Displaying the Score
-
-
 
 
     //Displaying the Score Activity

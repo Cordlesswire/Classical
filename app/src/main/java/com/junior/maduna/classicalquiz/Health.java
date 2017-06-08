@@ -37,8 +37,6 @@ public class Health extends AppCompatActivity {
     }
 
 
-
-
     //Displaying the Score Activity
 
     public void openScoreACt(View view) {

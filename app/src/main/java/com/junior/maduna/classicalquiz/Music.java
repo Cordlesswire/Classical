@@ -23,16 +23,15 @@ public class Music extends AppCompatActivity {
     public void questionTwo(View view) {
         RadioGroup radioGQ1 = (RadioGroup) findViewById(R.id.mradioGroupOne);
         //check if the user has selected something if not dont go to the next question
-        if (radioGQ1.getCheckedRadioButtonId() != -1){
+        if (radioGQ1.getCheckedRadioButtonId() != -1) {
             ScrollView layout = (ScrollView) findViewById(R.id.question2);
             ScrollView layout1 = (ScrollView) findViewById(R.id.question1);
             layout1.setVisibility(View.GONE);
             layout.setVisibility(View.VISIBLE);
-        }
-        else{
+        } else {
             Toast.makeText(Music.this,
                     "PLEASE SELECT AN OPTION BEFORE MOVING ON TO THE NEXT QUESTION", Toast.LENGTH_LONG).show();
-       }
+        }
 
     }
 
@@ -45,8 +44,7 @@ public class Music extends AppCompatActivity {
             ScrollView layout1 = (ScrollView) findViewById(R.id.question2);
             layout1.setVisibility(View.GONE);
             layout.setVisibility(View.VISIBLE);
-        }
-        else{
+        } else {
             Toast.makeText(Music.this,
                     "PLEASE SELECT AN OPTION BEFORE MOVING ON TO THE NEXT QUESTION", Toast.LENGTH_LONG).show();
         }
@@ -105,8 +103,7 @@ public class Music extends AppCompatActivity {
 
             }
 
-        }
-        else {
+        } else {
             Toast.makeText(Music.this,
                     "PLEASE SELECT AN OPTION BEFORE MOVING ON", Toast.LENGTH_LONG).show();
         }

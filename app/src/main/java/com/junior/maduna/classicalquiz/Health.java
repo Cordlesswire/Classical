@@ -37,12 +37,6 @@ public class Health extends AppCompatActivity {
     }
 
 
-    //Displaying the Score
-    private void displayScore(int score) {
-        TextView display_score = (TextView) findViewById(R.id.display_score);
-        display_score.setText("" + score);
-    }
-
 
 
     //Displaying the Score Activity

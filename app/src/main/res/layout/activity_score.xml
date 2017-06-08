@@ -9,39 +9,10 @@
     android:orientation="vertical"
     tools:context="com.junior.maduna.classicalquiz.Score">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-
-        <EditText
-            android:id="@+id/user_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginStart="26dp"
-            android:layout_marginTop="221dp"
-            android:hint="Enter Your Name"
-            android:textColorHint="@color/colorPrimary"
-            android:textColor="@color/colorPrimary"
-            android:textSize="15dp" />
-
-
         <RelativeLayout
             android:id="@+id/relativeLay"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
-
-            <TextView
-                android:id="@+id/display_score"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/congratulations_title"
-                android:layout_alignParentTop="true"
-                android:gravity="top"/>
+            android:layout_height="wrap_content">
 
             <Button
                 android:id="@+id/btnReplay"
@@ -68,6 +39,4 @@
                 android:textColor="@android:color/white"/>
 
         </RelativeLayout>
-
-    </LinearLayout>
 </ScrollView>

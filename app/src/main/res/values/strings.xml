@@ -82,12 +82,17 @@
 
 
     <!-- FINAL RESULTS -->
-    <string name="congratulations_title">Congratulations!</string>
+    <string name="scoreStat"> Score Statistics \nYour Overall Percentage: </string>
     <string name="correct_answers">Correct answers: </string>
     <string name="incorrect_answers">Incorrect answers: </string>
 
     <!-- NAME REQUIRED -->
-    <string name="name_required">Name is required!</string>
+    <string name="name_required">Enter Name</string>
+
+
+    <string name="genius">You are a Genius!</string>
+    <string name="amateur">You Did Okay.... Want to try your luck Again?</string>
+    <string name="bad">Better luck next time... Press Retry for another go</string>
 
 
 

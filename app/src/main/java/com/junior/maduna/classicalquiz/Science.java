@@ -29,12 +29,12 @@ public class Science extends AppCompatActivity {
             layout.setVisibility(View.VISIBLE);
         } else {
             Toast.makeText(Science.this,
-                    "PLEASE SELECT AN OPTION BEFORE MOVING ON TO THE NEXT QUESTION", Toast.LENGTH_LONG).show();
+                    "PLEASE SELECT AN OPTION BEFORE MOVING ON TO THE NEXT QUESTION", Toast.LENGTH_SHORT).show();
         }
 
     }
 
-    //Find out to check if a RadioGroup is selected or not and if not display a toast message telling the user to select something before moving on
+    //Find out to check if the user has selected a choice or not and if not display a toast message telling the user to select something before moving on
     public void questionThree(View view) {
         RadioGroup radioGQ2 = (RadioGroup) findViewById(R.id.sradioGroupTwo);
         //check if the user has selected something if not dont go to the next question
@@ -45,7 +45,7 @@ public class Science extends AppCompatActivity {
             layout.setVisibility(View.VISIBLE);
         } else {
             Toast.makeText(Science.this,
-                    "PLEASE SELECT AN OPTION BEFORE MOVING ON TO THE NEXT QUESTION", Toast.LENGTH_LONG).show();
+                    "PLEASE SELECT AN OPTION BEFORE MOVING ON TO THE NEXT QUESTION", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -105,7 +105,7 @@ public class Science extends AppCompatActivity {
             }
         } else {
             Toast.makeText(Science.this,
-                    "PLEASE SELECT AN OPTION BEFORE MOVING ON", Toast.LENGTH_LONG).show();
+                    "PLEASE SELECT AN OPTION BEFORE MOVING ON", Toast.LENGTH_SHORT).show();
         }
 
     }

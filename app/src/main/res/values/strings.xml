@@ -25,6 +25,15 @@
     <string name="q3_2">B. Melatonin</string>
     <string name="q3_3">C. Serotonin</string>
 
+    <string name="quiz_four_question">What is the main ingredient in yogurt ? </string>
+    <string name="q4_1">A. Milk</string>
+
+    <string name="quiz_five_question">What is the name of the first toothpaste ever made ? </string>
+    <string name="q5_1">A. Maclean</string>
+    <string name="q5_2">B. Crème Dentifrice</string> <!-- true-->
+    <string name="q5_3">C. Tooth Polish</string>
+
+
 
       <!-- QUESTIONS FOR THE SCIENCE CATEGORY-->
     <string name="science_quiz_one_question">Dry ice is a frozen form of which gas?</string>
@@ -42,8 +51,18 @@
     <string name="qs3_2">B. Galileo Galilei</string>
     <string name="qs3_3">C. Joseph Priestley </string>
 
+    <string name="science_quiz_four_question">  _______ invented the periodic table. </string>
+    <string name="qs4_1">A. Dmitri Mendeleev</string>
 
-         <!-- QUESTIONS FOR THE TECHNOLOGY CATEGORY-->
+
+    <string name="science_quiz_five_question">  Who invented the petri dish? </string>
+    <string name="qs5_1">A. Dmitri Mendeleev Petri</string>
+    <string name="qs5_2">B. Petri Simon Blaise</string>
+    <string name="qs5_3">C. Julius Richard Petri </string>  <!-- true-->
+
+
+
+    <!-- QUESTIONS FOR THE TECHNOLOGY CATEGORY-->
     <string name="technology_quiz_one_question">Who invented the World Wide Web?</string>
     <string name="qt1_1">A. Vint Cerf</string>
     <string name="qt1_2">B. Tim Berners-Lee</string>
@@ -58,6 +77,14 @@
     <string name="qt3_1">A. Orville and Wilbur Wright</string>
     <string name="qt3_2">B. James Watt</string>
     <string name="qt3_3">C. Joseph and Jacques Montgolfier</string>
+
+    <string name="technology_quiz_four_question"> ______ invented the printing press.  </string>
+    <string name="qt4_1">A. Johannes Gutenburg</string>
+
+    <string name="technology_quiz_five_question"> ______ invented the calculator</string>
+    <string name="qt5_1">A. Isaac Newton</string>
+    <string name="qt5_2">B. Blaise Pascal</string>  <!-- true-->
+    <string name="qt5_3">C. Johannes Kepler</string>
 
 
         <!-- QUESTIONS FOR THE MUSIC CATEGORY-->
@@ -76,6 +103,14 @@
     <string name="qm3_2">B. Harpsichord</string>
     <string name="qm3_3">C. Wheelharp</string>
 
+    <string name="music_quiz_four_question"> Which Classical artist did Einstein see as a musical physicist? </string>
+    <string name="qm4_1">A. Mozart</string>
+
+    <string name="music_quiz_five_question"> Who wrote the Religious classic "Messiah" in 1741? </string>
+    <string name="qm5_1">A. Wolfgang Amadeus Mozart </string>
+    <string name="qm5_2">B. Johann Sebestian Bach</string>
+    <string name="qm5_3">C. George Frideric Handel</string>  <!-- true-->
+
 
 
 
@@ -93,16 +128,6 @@
     <string name="bad">Better luck next time... Press Retry for another go</string>
 
 
-
-
-    <!-- SCORE -->
-    <string name="thank_you">THANK YOU!</string>
-    <string name="low_score">LOW SCORE 0-3</string>
-    <string name="low_score_description">, your geography knowledge is low. \nThink about studying a little bit hehe :) \n</string>
-    <string name="medium_score">MEDIUM SCORE 4-7</string>
-    <string name="medium_score_description">, your geography knowledge is medium. \nKeep up the good work! \n</string>
-    <string name="high_score">HIGH SCORE 8-10</string>
-    <string name="high_score_description">, your geography knowledge is high! \nWOW! Where is your limit?! \n</string>
 
     <!-- SHARE -->
     <string name="share_title">Share your Geography Quiz results!</string>

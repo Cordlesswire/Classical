@@ -73,7 +73,7 @@ public class Music extends AppCompatActivity {
 
 
         TextView quizScore = (TextView) findViewById(R.id.mscore);
-        quizScore.setText(getResources().getString(R.string.scoreStat) + "\t" +percent + "%" + "\n" + getResources().getString(R.string.correct_answers) + "\t" + score + "\n" + getResources().getString(R.string.incorrect_answers) + "\t" + incorrect);
+        quizScore.setText( getResources().getString(R.string.congrats) + getResources().getString(R.string.scoreStat) + "\t" +percent + "%" + "\n"+ getResources().getString(R.string.correct_answers) + "\t" + score + "\n" + getResources().getString(R.string.incorrect_answers) + "\t" + incorrect + "\n");
 
 
         RadioGroup radioGQ3 = (RadioGroup) findViewById(R.id.mradioGroupThree);

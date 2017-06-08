@@ -225,7 +225,7 @@
         android:id="@+id/musicScore"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/trophy"
+        android:background="@drawable/bacground"
         android:visibility="gone">
 
         <!-- Here we hide the scrollview because we only the user to see one question at a time -->
@@ -269,7 +269,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/name_required"
-                    android:textColor="@android:color/white"
+                    android:textColor="@android:color/black"
                     android:textSize="25dp"
                     android:inputType="text" />
 
@@ -281,13 +281,12 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
                 android:orientation="vertical">
 
 
                 <Button
                     android:id="@+id/btnUsername"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:layout_margin="25dp"
@@ -299,7 +298,7 @@
 
                 <Button
                     android:id="@+id/btnReplay"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:layout_margin="25dp"
@@ -311,7 +310,7 @@
 
                 <Button
                     android:id="@+id/btnShare"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:layout_margin="25dp"

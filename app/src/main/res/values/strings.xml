@@ -82,9 +82,10 @@
 
 
     <!-- FINAL RESULTS -->
-    <string name="scoreStat"> Score Statistics \nYour Overall Percentage: </string>
-    <string name="correct_answers">Correct answers: </string>
-    <string name="incorrect_answers">Incorrect answers: </string>
+    <string name="congrats">\n Congratulations on Completing the Quiz\n \n</string>
+    <string name="scoreStat"> \n \t Here Are Your Quiz Results \n\nOverall Percentage: \n</string>
+    <string name="correct_answers">Correct answers: \n</string>
+    <string name="incorrect_answers">Incorrect answers: \n</string>
 
     <!-- NAME REQUIRED -->
     <string name="name_required">Enter Name</string>

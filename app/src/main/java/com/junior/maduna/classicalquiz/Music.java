@@ -10,6 +10,7 @@ import android.text.Editable;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.RadioGroup;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -28,6 +29,7 @@ public class Music extends AppCompatActivity {
         //make background transperant
         // keyboard doesn't show when activity starts
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
+
     }
 
     //Find out to check if has selected a choice or not and if not display a toast message telling the user to select something before moving on

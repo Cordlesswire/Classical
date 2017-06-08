@@ -35,7 +35,11 @@ public class Music extends AppCompatActivity {
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
     }
-
+//Replay game
+    public void replayGame(View view) {
+        Intent i = new Intent(this, MainActivity.class);
+        startActivity(i);
+    }
     //Find out to check if has selected a choice or not and if not display a toast message telling the user to select something before moving on
     public void questionTwo(View view) {
         RadioGroup radioGQ1 = (RadioGroup) findViewById(R.id.mradioGroupOne);
@@ -137,7 +141,5 @@ public class Music extends AppCompatActivity {
                     "PLEASE SELECT AN OPTION BEFORE MOVING ON TO THE NEXT QUESTION", Toast.LENGTH_SHORT).show();
         }
     }
-
-
 
 }

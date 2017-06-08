@@ -215,7 +215,7 @@
                 android:layout_margin="25dp"
                 android:layout_weight="0"
                 android:backgroundTint="@android:color/black"
-                android:onClick="openScoreACt"
+                android:onClick="scoreDisplay"
                 android:text="Submit"
                 android:textColor="@android:color/white" />
 

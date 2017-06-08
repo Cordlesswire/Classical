@@ -3,20 +3,34 @@ package com.junior.maduna.classicalquiz;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Editable;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.ScrollView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
 public class Health extends AppCompatActivity {
-    int score = 0;
+    float score = 0;
+    float total = 3;
+    float percent = 0;
+    float incorrect = 0;
 
+
+    Editable userName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_health);
+    }
+
+    //Replay game
+    public void replayGame(View view) {
+        Intent i = new Intent(this, MainActivity.class);
+        startActivity(i);
     }
 
     //Method to display Question 2
@@ -51,63 +65,71 @@ public class Health extends AppCompatActivity {
     }
 
 
-    //Displaying the Score Activity
+    //New Score method
+    public void scoreDisplay(View view) {
 
-    public void openScoreACt(View view) {
-        //Access the RadioGroup view and save it to a variable.
+
+
         RadioGroup radioGQ3 = (RadioGroup) findViewById(R.id.healthRadioGroupThree);
+        //check if the user has selected something if not dont go to the next question
         if (radioGQ3.getCheckedRadioButtonId() != -1) {
-            Intent i = new Intent(this, Score.class);
-            startActivity(i);
-
-            //Access the RadioGroup view and save it to a variable.
-            RadioGroup radioGQ1 = (RadioGroup) findViewById(R.id.healthRadioGroupOne);
-            //Get the id of the RadioButton that is checked and save it
-            //as an integer variable.
-            int solutionId1 = radioGQ1.getCheckedRadioButtonId();
-            //Use if statements to respond based on whether
-            //it is the id of the correct answer.
-            if (solutionId1 == R.id.q1_1) {
-                score++;
-
-            }
+            ScrollView layout = (ScrollView) findViewById(R.id.healthScore);
+            ScrollView layout1 = (ScrollView) findViewById(R.id.question3);
+            layout1.setVisibility(View.GONE);
+            layout.setVisibility(View.VISIBLE);
 
 
-            //Access the RadioGroup view and save it to a variable.
-            RadioGroup radioGQ2 = (RadioGroup) findViewById(R.id.healthRadioGroupTwo);
-            //Get the id of the RadioButton that is checked and save it
-            //as an integer variable.
-            int solutionId2 = radioGQ2.getCheckedRadioButtonId();
-            if (solutionId2 == R.id.q2_3) {
-                score++;
-
-            }
+            EditText artistInput = (EditText) findViewById(R.id.userName);
+            String username = artistInput.getText().toString();
 
 
-            //Get the id of the RadioButton that is checked and save it
-            //as an integer variable.
-            int solutionId3 = radioGQ3.getCheckedRadioButtonId();
-            if (solutionId3 == R.id.q3_3) {
-                score++;
-
-
-                if (score >= 3) {
-                    Toast.makeText(Health.this,
-                            "YOU SCORED A PERFECT " + score + " OUT OF 3.", Toast.LENGTH_LONG).show();
-
-                } else if (score < 3) {
-                    Toast.makeText(Health.this,
-                            "You scored " + score + " out of 3.", Toast.LENGTH_LONG).show();
+            //Calculating the score
+            if (radioGQ3.getCheckedRadioButtonId() != -1) {
+                //Access the RadioGroup view and save it to a variable.
+                //Get the id of the RadioButton that is checked and save it as an integer variable.
+                RadioGroup radioGQ1 = (RadioGroup) findViewById(R.id.healthRadioGroupOne);
+                int solutionId1 = radioGQ1.getCheckedRadioButtonId();
+                //Use if statements to respond based on whether
+                //it is the id of the correct answer.
+                if (solutionId1 == R.id.q1_1) {
+                    score++;
                 }
 
 
+                //Access the RadioGroup view and save it to a variable.
+                RadioGroup radioGQ2 = (RadioGroup) findViewById(R.id.healthRadioGroupTwo);
+                //Get the id of the RadioButton that is checked and save it
+                //as an integer variable.
+                int solutionId2 = radioGQ2.getCheckedRadioButtonId();
+                if (solutionId2 == R.id.q2_3) {
+                    score++;
+
+                }
+
+
+                //Access the RadioGroup view and save it to a variable.
+                //Get the id of the RadioButton that is checked and save it
+                //as an integer variable.
+                int solutionId3 = radioGQ3.getCheckedRadioButtonId();
+                if (solutionId3 == R.id.q3_3) {
+                    score++;
+
+                }
+
             }
+
+            TextView quizScore = (TextView) findViewById(R.id.mscore);
+            percent = (score * 100) / total;
+            incorrect = total - score;
+            quizScore.setText( getResources().getString(R.string.congrats) + getResources().getString(R.string.scoreStat) + "\t" + percent + " %" + "\n"+ getResources().getString(R.string.correct_answers) + "\t" + score + "\n" + getResources().getString(R.string.incorrect_answers) + "\t" + incorrect + "\n");
+
+
+
 
         } else {
             Toast.makeText(Health.this,
-                    "PLEASE SELECT AN OPTION BEFORE MOVING ON", Toast.LENGTH_SHORT).show();
+                    "PLEASE SELECT AN OPTION BEFORE MOVING ON TO THE NEXT QUESTION", Toast.LENGTH_SHORT).show();
         }
     }
-
 }
 

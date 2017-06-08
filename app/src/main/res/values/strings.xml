@@ -87,10 +87,7 @@
     <string name="correct_answers">Correct answers: \n</string>
     <string name="incorrect_answers">Incorrect answers: \n</string>
 
-    <!-- NAME REQUIRED -->
     <string name="name_required">Enter Name</string>
-
-
     <string name="genius">You are a Genius!</string>
     <string name="amateur">You Did Okay.... Want to try your luck Again?</string>
     <string name="bad">Better luck next time... Press Retry for another go</string>

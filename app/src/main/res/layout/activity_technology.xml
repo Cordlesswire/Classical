@@ -154,7 +154,7 @@
 
     <!-- Question 3 -->
     <ScrollView
-        android:id="@+id/question3"
+        android:id="@+id/question5"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/bacground"
@@ -222,6 +222,154 @@
 
         </LinearLayout>
     </ScrollView>
+
+
+    <!-- Question 4 -->
+    <ScrollView
+        android:id="@+id/question4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bacground"
+        android:visibility="gone">
+        <!-- Here we hide the scrollview because we only the user to see one question at a time -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_margin="15dp"
+                android:layout_weight="2"
+                android:background="@drawable/printing" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="@string/technology_quiz_four_question"
+                android:textColor="@color/colorPrimary" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="7dp"
+                    android:text="@string/qt4_1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="7dp"
+                    android:text="@string/qt4_2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="7dp"
+                    android:text="@string/qt4_3" />
+            </LinearLayout>
+
+
+
+            <EditText
+                android:id="@+id/tech"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:ems="10"
+                android:hint="@string/hint"
+                android:inputType="textCapWords" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="25dp"
+                android:layout_weight="0"
+                android:backgroundTint="@android:color/black"
+                android:onClick="questionFive"
+                android:text="Next"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Question 5 -->
+    <ScrollView
+        android:id="@+id/question3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bacground"
+        android:visibility="gone">
+        <!-- Here we hide the scrollview because we only the user to see one question at a time -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_margin="15dp"
+                android:layout_weight="2"
+                android:background="@drawable/calculator" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="@string/technology_quiz_five_question"
+                android:textColor="@color/colorPrimary" />
+
+            <CheckBox
+                android:id="@+id/techBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/qt5_1" />
+
+            <CheckBox
+                android:id="@+id/techBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/qt5_2" />
+
+            <CheckBox
+                android:id="@+id/techBox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/qt5_3" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="25dp"
+                android:layout_weight="0"
+                android:backgroundTint="@android:color/black"
+                android:onClick="questionFour"
+                android:text="Next"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+
 
 
 

@@ -84,8 +84,8 @@
     <string name="qt3_3">C. Joseph and Jacques Montgolfier</string>
 
     <string name="technology_quiz_four_question"> ______ invented the printing press.  </string>
-    <string name="qt4_1">A. Johannes Gutenburg</string>
-    <string name="qt4_2">B. Johannes Gutenburg</string>
+    <string name="qt4_1">A. Alexander Graham Bell</string>
+    <string name="qt4_2">B. Michael Faraday</string>
     <string name="qt4_3">C. Johannes Gutenburg</string>  <!-- true-->
 
     <string name="technology_quiz_five_question"> ______ invented the calculator</string>

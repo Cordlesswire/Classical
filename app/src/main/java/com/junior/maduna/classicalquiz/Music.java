@@ -83,7 +83,7 @@ public class Music extends AppCompatActivity {
         String artistName = artistInput.getText().toString();
 
         //check if the user has inputed something if not dont go to the next question
-        if (artistName.equals(" ") ) {
+        if (artistName.matches(" ") ) {
             Toast.makeText(Music.this,
                     "PLEASE SELECT AN OPTION BEFORE MOVING ON TO THE NEXT QUESTION", Toast.LENGTH_SHORT).show();
         } else {
@@ -175,6 +175,8 @@ public class Music extends AppCompatActivity {
                     score++;
 
                 }
+
+
 
             }
 

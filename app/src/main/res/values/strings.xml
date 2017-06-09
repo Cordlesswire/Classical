@@ -104,16 +104,19 @@
     <string name="qm3_3">C. Wheelharp</string>
 
     <string name="music_quiz_four_question"> Which Classical artist did Einstein see as a musical physicist? </string>
-    <string name="qm4_1">A. Mozart</string>
+    <string name="qm4_1">A. Beethoven</string>
+    <string name="qm4_2">B. Joseph Haydn</string>
+    <string name="qm4_3">C. Mozart</string>
+    <string name="qm4_4">D. Sebastian Bach</string>
 
     <string name="music_quiz_five_question"> Who wrote the Religious classic "Messiah" in 1741? </string>
     <string name="qm5_1">A. Wolfgang Amadeus Mozart </string>
     <string name="qm5_2">B. Johann Sebestian Bach</string>
-    <string name="qm5_3">C. George Frideric Handel</string>  <!-- true-->
+    <string name="qm5_3">C. George Frideric Handel</string><!-- true-->
 
 
 
-
+    <string name="hint"> Answer </string>
 
 
     <!-- FINAL RESULTS -->

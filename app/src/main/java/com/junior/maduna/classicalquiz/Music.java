@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RadioGroup;
@@ -40,6 +41,9 @@ public class Music extends AppCompatActivity {
         Intent i = new Intent(this, MainActivity.class);
         startActivity(i);
     }
+
+
+    //Display question 2
     //Find out to check if has selected a choice or not and if not display a toast message telling the user to select something before moving on
     public void questionTwo(View view) {
         RadioGroup radioGQ1 = (RadioGroup) findViewById(R.id.mradioGroupOne);
@@ -56,7 +60,7 @@ public class Music extends AppCompatActivity {
 
     }
 
-
+   //Display question 3
     public void questionThree(View view) {
         RadioGroup radioGQ2 = (RadioGroup) findViewById(R.id.mradioGroupTwo);
         //check if the user has selected something if not dont go to the next question
@@ -73,6 +77,51 @@ public class Music extends AppCompatActivity {
 
 
 
+    //Display question 4
+    public void questionFour(View view) {
+        EditText artistInput = (EditText) findViewById(R.id.musician);
+        String artistName = artistInput.getText().toString();
+
+        //check if the user has inputed something if not dont go to the next question
+        if (artistName != null) {
+            ScrollView layout = (ScrollView) findViewById(R.id.question4);
+            ScrollView layout1 = (ScrollView) findViewById(R.id.question3);
+            layout1.setVisibility(View.GONE);
+            layout.setVisibility(View.VISIBLE);
+        } else {
+            Toast.makeText(Music.this,
+                    "PLEASE SELECT AN OPTION BEFORE MOVING ON TO THE NEXT QUESTION", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+
+    //Display question 5
+    public void questionFive(View view) {
+        CheckBox andy = (CheckBox) findViewById(R.id.musicBox1);
+        boolean isAndy = andy.isChecked();
+
+        CheckBox chic = (CheckBox) findViewById(R.id.musicBox2);
+        boolean isChic = chic.isChecked();
+
+        CheckBox debby = (CheckBox) findViewById(R.id.musicBox3);
+        boolean isDebby = debby.isChecked();
+
+        //check if the user has inputed something if not dont go to the next question
+        if (!isAndy && !isDebby && !isChic) {
+            ScrollView layout = (ScrollView) findViewById(R.id.question5);
+            ScrollView layout1 = (ScrollView) findViewById(R.id.question4);
+            layout1.setVisibility(View.GONE);
+            layout.setVisibility(View.VISIBLE);
+        } else {
+            Toast.makeText(Music.this,
+                    "PLEASE SELECT AN OPTION BEFORE MOVING ON TO THE NEXT QUESTION", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+
+
+
+
 
 
     //New Score method
@@ -84,7 +133,7 @@ public class Music extends AppCompatActivity {
         //check if the user has selected something if not dont go to the next question
         if (radioGQ3.getCheckedRadioButtonId() != -1) {
             ScrollView layout = (ScrollView) findViewById(R.id.musicScore);
-            ScrollView layout1 = (ScrollView) findViewById(R.id.question3);
+            ScrollView layout1 = (ScrollView) findViewById(R.id.question5);
             layout1.setVisibility(View.GONE);
             layout.setVisibility(View.VISIBLE);
 

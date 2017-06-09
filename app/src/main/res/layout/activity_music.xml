@@ -153,7 +153,7 @@
 
     <!-- Question 3 -->
     <ScrollView
-        android:id="@+id/question3"
+        android:id="@+id/question5"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/bacground"
@@ -222,6 +222,166 @@
         </LinearLayout>
     </ScrollView>
 
+    <!-- Question 4 -->
+    <ScrollView
+        android:id="@+id/question4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bacground"
+        android:visibility="gone">
+        <!-- Here we hide the scrollview because we only the user to see one question at a time -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_margin="15dp"
+                android:layout_weight="2"
+                android:background="@drawable/mozart" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="@string/music_quiz_four_question"
+                android:textColor="@color/colorPrimary" />
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_marginTop="7dp"
+                        android:text="@string/qm4_1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="7dp"
+                        android:text="@string/qm4_2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="7dp"
+                        android:text="@string/qm4_3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="7dp"
+                        android:layout_marginRight="16dp"
+                        android:text="@string/qm4_4" />
+
+                </LinearLayout>
+            </ScrollView>
+
+            <EditText
+                android:id="@+id/musician"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="@string/hint"
+                android:inputType="textCapWords" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="25dp"
+                android:layout_weight="0"
+                android:backgroundTint="@android:color/black"
+                android:onClick="scoreDisplay"
+                android:text="Submit"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Question 5 -->
+    <ScrollView
+        android:id="@+id/question3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bacground"
+        android:visibility="gone">
+        <!-- Here we hide the scrollview because we only the user to see one question at a time -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_margin="15dp"
+                android:layout_weight="2"
+                android:background="@drawable/handel" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="@string/music_quiz_five_question"
+                android:textColor="@color/colorPrimary" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/qm5_1"
+                android:id="@+id/musicBox1"
+                android:checked="false" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/q5_2"
+                android:id="@+id/musicBox2"
+                android:checked="false" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/qm5_3"
+                android:id="@+id/musicBox3"
+                android:checked="false" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="25dp"
+                android:layout_weight="0"
+                android:backgroundTint="@android:color/black"
+                android:onClick="questionFour"
+                android:text="Next"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+
 
     <!-- Score screen -->
     <ScrollView
@@ -271,9 +431,9 @@
                     android:id="@+id/userName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="25dp"
                     android:hint="@string/name_required"
                     android:inputType="text"
-                    android:layout_margin="25dp"
                     android:textColor="@android:color/black"
                     android:textSize="25dp" />
 

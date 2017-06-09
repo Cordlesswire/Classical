@@ -169,12 +169,6 @@ public class Music extends AppCompatActivity {
 
             }
 
-            EditText artistInput = (EditText) findViewById(R.id.musician);
-            String artistName = artistInput.getText().toString();
-
-            if (artistName.equalsIgnoreCase("Mozart")) {
-                score++;
-            }
 
             CheckBox mozar = (CheckBox) findViewById(R.id.musicBox1);
             boolean isMozart = mozar.isChecked();
@@ -188,6 +182,15 @@ public class Music extends AppCompatActivity {
             if(isHandel && !isBach && !isMozart){
                 score++;
             }
+
+
+            EditText artistInput = (EditText) findViewById(R.id.musician);
+            String artistName = artistInput.getText().toString();
+
+            if (artistName.equalsIgnoreCase("Mozart")) {
+                score++;
+            }
+
 
 
 

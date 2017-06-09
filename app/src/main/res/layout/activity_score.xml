@@ -9,37 +9,16 @@
     android:orientation="vertical"
     tools:context="com.junior.maduna.classicalquiz.Score">
 
-        <RelativeLayout
+        <LinearLayout
             android:id="@+id/relativeLay"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/trophy"/>
 
-            <Button
-                android:id="@+id/btnReplay"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentBottom="true"
-                android:text="Replay"
-                android:textSize="20dp"
-                android:onClick="replayGame"
-                android:layout_margin="25dp"
-                android:backgroundTint="@android:color/black"
-                android:textColor="@android:color/white"/>
-
-            <Button
-                android:id="@+id/submitName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:textSize="20dp"
-                android:text="Submit"
-                android:onClick="submitName"
-                android:layout_margin="25dp"
-                android:backgroundTint="@android:color/black"
-                android:textColor="@android:color/white"/>
-
-        </RelativeLayout>
+        </LinearLayout>
 </ScrollView>

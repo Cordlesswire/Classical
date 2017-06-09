@@ -83,14 +83,15 @@ public class Music extends AppCompatActivity {
         String artistName = artistInput.getText().toString();
 
         //check if the user has inputed something if not dont go to the next question
-        if (artistName != null) {
+        if (artistName.equals(" ") ) {
+            Toast.makeText(Music.this,
+                    "PLEASE SELECT AN OPTION BEFORE MOVING ON TO THE NEXT QUESTION", Toast.LENGTH_SHORT).show();
+        } else {
             ScrollView layout = (ScrollView) findViewById(R.id.question4);
             ScrollView layout1 = (ScrollView) findViewById(R.id.question3);
             layout1.setVisibility(View.GONE);
             layout.setVisibility(View.VISIBLE);
-        } else {
-            Toast.makeText(Music.this,
-                    "PLEASE SELECT AN OPTION BEFORE MOVING ON TO THE NEXT QUESTION", Toast.LENGTH_SHORT).show();
+
         }
     }
 

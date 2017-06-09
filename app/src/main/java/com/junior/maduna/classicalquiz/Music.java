@@ -1,17 +1,13 @@
 package com.junior.maduna.classicalquiz;
 
 
-import android.content.DialogInterface;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.Editable;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.RadioGroup;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -104,7 +100,6 @@ public class Music extends AppCompatActivity {
 
        // CheckBox handel = (CheckBox) findViewById(R.id.musicBox3);
         //boolean isHandel = handel.isChecked();
-
 
 
         //check if the user has inputed something if not dont go to the next question
@@ -203,20 +198,4 @@ public class Music extends AppCompatActivity {
                     "PLEASE SELECT AN OPTION BEFORE MOVING ON TO THE NEXT QUESTION", Toast.LENGTH_SHORT).show();
         }
     }
-
-
-    //Get users name to display when they sahre their score
-    //public void submitUsername(View view) {
-        //EditText userName = (EditText) findViewById(R.id.userName);
-        //String username = userName.getText().toString();
-
-        //check if the user has inputted something
-        // if (username.matches("") ) {
-        //Toast.makeText(Music.this,
-       // "PLEASE ENTER A VALID NAME", Toast.LENGTH_SHORT).show();
-         //} else {
-          //   Toast.makeText(Music.this,
-          //           "NAME SUCCESSFULLY STORED ", Toast.LENGTH_SHORT).show();
-       //  }
-   // }
 }

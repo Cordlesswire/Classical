@@ -3,9 +3,9 @@ package com.junior.maduna.classicalquiz;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.Editable;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.ScrollView;
@@ -14,12 +14,10 @@ import android.widget.Toast;
 
 public class Science extends AppCompatActivity {
     float score = 0;
-    float total = 3;
+    float total = 5;
     float percent = 0;
     float incorrect = 0;
 
-
-    Editable userName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +35,8 @@ public class Science extends AppCompatActivity {
     }
 
 
-    //Find out to check if a RadioGroup is selected or not and if not display a toast message telling the user to select something before moving on
+    //Display question 2
+    //Find out to check if has selected a choice or not and if not display a toast message telling the user to select something before moving on
     public void questionTwo(View view) {
         RadioGroup radioGQ1 = (RadioGroup) findViewById(R.id.sradioGroupOne);
         //check if the user has selected something if not dont go to the next question
@@ -53,7 +52,7 @@ public class Science extends AppCompatActivity {
 
     }
 
-    //Find out to check if the user has selected a choice or not and if not display a toast message telling the user to select something before moving on
+    //Display question 3
     public void questionThree(View view) {
         RadioGroup radioGQ2 = (RadioGroup) findViewById(R.id.sradioGroupTwo);
         //check if the user has selected something if not dont go to the next question
@@ -69,17 +68,34 @@ public class Science extends AppCompatActivity {
     }
 
 
+    //Display question 4
+    public void questionFour(View view) {
+        ScrollView layout = (ScrollView) findViewById(R.id.question4);
+        ScrollView layout1 = (ScrollView) findViewById(R.id.question3);
+        layout1.setVisibility(View.GONE);
+        layout.setVisibility(View.VISIBLE);
+    }
+
+
+    //Display question 5
+    public void questionFive(View view) {
+        ScrollView layout = (ScrollView) findViewById(R.id.question5);
+        ScrollView layout1 = (ScrollView) findViewById(R.id.question4);
+        layout1.setVisibility(View.GONE);
+        layout.setVisibility(View.VISIBLE);
+    }
+
+
     //New Score method
     public void scoreDisplay(View view) {
-
-
         RadioGroup radioGQ3 = (RadioGroup) findViewById(R.id.sradioGroupThree);
         //check if the user has selected something if not dont go to the next question
         if (radioGQ3.getCheckedRadioButtonId() != -1) {
             ScrollView layout = (ScrollView) findViewById(R.id.scienceScore);
-            ScrollView layout1 = (ScrollView) findViewById(R.id.question3);
+            ScrollView layout1 = (ScrollView) findViewById(R.id.question5);
             layout1.setVisibility(View.GONE);
             layout.setVisibility(View.VISIBLE);
+
 
             //Calculating the score
             if (radioGQ3.getCheckedRadioButtonId() != -1) {
@@ -114,7 +130,33 @@ public class Science extends AppCompatActivity {
 
                 }
 
+
             }
+
+            //Get the users selection from the checkbox and decide if its the correct one and increment score
+            CheckBox dmitri = (CheckBox) findViewById(R.id.scienceBox1);
+            boolean isDmitri = dmitri.isChecked();
+
+            CheckBox petri = (CheckBox) findViewById(R.id.scienceBox2);
+            boolean isPetri = petri.isChecked();
+
+            CheckBox julius = (CheckBox) findViewById(R.id.scienceBox3);
+            boolean isJulius = julius.isChecked();
+
+            if(isJulius && !isPetri && !isDmitri){
+                score++;
+            }
+
+            //Get the users input from the edittext and decide if its the correct one and increment score
+            EditText artistInput = (EditText) findViewById(R.id.scientist);
+            String artistName = artistInput.getText().toString();
+
+            if (artistName.equalsIgnoreCase("Julius Richard Petri")) {
+                score++;
+            }
+
+
+
 
             TextView quizScore = (TextView) findViewById(R.id.mscore);
             percent = (score * 100) / total;

@@ -252,23 +252,16 @@
                 android:text="@string/music_quiz_four_question"
                 android:textColor="@color/colorPrimary" />
 
-            <ScrollView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="7dp"
-                        android:layout_marginLeft="16dp"
-                        android:layout_marginRight="7dp"
-                        android:layout_marginTop="7dp"
+                        android:layout_margin="7dp"
                         android:text="@string/qm4_1" />
 
                     <TextView
@@ -287,18 +280,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="7dp"
-                        android:layout_marginRight="16dp"
                         android:text="@string/qm4_4" />
-
                 </LinearLayout>
-            </ScrollView>
+
+
 
             <EditText
                 android:id="@+id/musician"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
+                android:layout_margin="20dp"
                 android:ems="10"
                 android:hint="@string/hint"
                 android:inputType="textCapWords" />
@@ -310,8 +301,8 @@
                 android:layout_margin="25dp"
                 android:layout_weight="0"
                 android:backgroundTint="@android:color/black"
-                android:onClick="scoreDisplay"
-                android:text="Submit"
+                android:onClick="questionFive"
+                android:text="Next"
                 android:textColor="@android:color/white" />
 
         </LinearLayout>
@@ -347,26 +338,27 @@
                 android:layout_margin="15dp"
                 android:text="@string/music_quiz_five_question"
                 android:textColor="@color/colorPrimary" />
+
             <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/qm5_1"
                 android:id="@+id/musicBox1"
-                android:checked="false" />
-
-            <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/q5_2"
+                android:checked="false"
+                android:text="@string/qm5_1" />
+
+            <CheckBox
                 android:id="@+id/musicBox2"
-                android:checked="false" />
-
-            <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/qm5_3"
+                android:checked="false"
+                android:text="@string/q5_2" />
+
+            <CheckBox
                 android:id="@+id/musicBox3"
-                android:checked="false" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/qm5_3" />
 
             <Button
                 android:layout_width="wrap_content"

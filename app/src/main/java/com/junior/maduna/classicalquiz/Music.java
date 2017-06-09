@@ -20,7 +20,7 @@ import android.widget.Toast;
 public class Music extends AppCompatActivity {
 
     float score = 0;
-    float total = 3;
+    float total = 5;
     float percent = 0;
     float incorrect = 0;
 
@@ -36,7 +36,8 @@ public class Music extends AppCompatActivity {
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
     }
-//Replay game
+
+    //Replay game
     public void replayGame(View view) {
         Intent i = new Intent(this, MainActivity.class);
         startActivity(i);
@@ -60,7 +61,7 @@ public class Music extends AppCompatActivity {
 
     }
 
-   //Display question 3
+    //Display question 3
     public void questionThree(View view) {
         RadioGroup radioGQ2 = (RadioGroup) findViewById(R.id.mradioGroupTwo);
         //check if the user has selected something if not dont go to the next question
@@ -76,60 +77,53 @@ public class Music extends AppCompatActivity {
     }
 
 
-
     //Display question 4
     public void questionFour(View view) {
-        EditText artistInput = (EditText) findViewById(R.id.musician);
-        String artistName = artistInput.getText().toString();
+        //EditText artistInput = (EditText) findViewById(R.id.musician);
+         //String artistName = artistInput.getText().toString();
 
         //check if the user has inputed something if not dont go to the next question
-        if (artistName.matches(" ") ) {
-            Toast.makeText(Music.this,
-                    "PLEASE SELECT AN OPTION BEFORE MOVING ON TO THE NEXT QUESTION", Toast.LENGTH_SHORT).show();
-        } else {
-            ScrollView layout = (ScrollView) findViewById(R.id.question4);
-            ScrollView layout1 = (ScrollView) findViewById(R.id.question3);
-            layout1.setVisibility(View.GONE);
-            layout.setVisibility(View.VISIBLE);
+       // if (artistName.matches(" ") ) {
+         //Toast.makeText(Music.this,
+          //"PLEASE SELECT AN OPTION BEFORE MOVING ON TO THE NEXT QUESTION", Toast.LENGTH_SHORT).show();
+       // } else {
+        ScrollView layout = (ScrollView) findViewById(R.id.question4);
+        ScrollView layout1 = (ScrollView) findViewById(R.id.question3);
+        layout1.setVisibility(View.GONE);
+        layout.setVisibility(View.VISIBLE);
 
-        }
+        //}
     }
 
 
     //Display question 5
     public void questionFive(View view) {
-        CheckBox andy = (CheckBox) findViewById(R.id.musicBox1);
-        boolean isAndy = andy.isChecked();
+        CheckBox mozar = (CheckBox) findViewById(R.id.musicBox1);
+        boolean isMozart = mozar.isChecked();
 
-        CheckBox chic = (CheckBox) findViewById(R.id.musicBox2);
-        boolean isChic = chic.isChecked();
+        CheckBox bach = (CheckBox) findViewById(R.id.musicBox2);
+        boolean isBach = bach.isChecked();
 
-        CheckBox debby = (CheckBox) findViewById(R.id.musicBox3);
-        boolean isDebby = debby.isChecked();
+        CheckBox handel = (CheckBox) findViewById(R.id.musicBox3);
+        boolean isHandel = handel.isChecked();
+
+
 
         //check if the user has inputed something if not dont go to the next question
-        if (!isAndy && !isDebby && !isChic) {
+        //if (isAndy || isDebby || isChic) {
             ScrollView layout = (ScrollView) findViewById(R.id.question5);
             ScrollView layout1 = (ScrollView) findViewById(R.id.question4);
             layout1.setVisibility(View.GONE);
             layout.setVisibility(View.VISIBLE);
-        } else {
-            Toast.makeText(Music.this,
-                    "PLEASE SELECT AN OPTION BEFORE MOVING ON TO THE NEXT QUESTION", Toast.LENGTH_SHORT).show();
-        }
+        //} else {
+            //Toast.makeText(Music.this,
+                   // "PLEASE SELECT AN OPTION BEFORE MOVING ON TO THE NEXT QUESTION", Toast.LENGTH_SHORT).show();
+        //}
     }
-
-
-
-
-
 
 
     //New Score method
     public void scoreDisplay(View view) {
-
-
-
         RadioGroup radioGQ3 = (RadioGroup) findViewById(R.id.mradioGroupThree);
         //check if the user has selected something if not dont go to the next question
         if (radioGQ3.getCheckedRadioButtonId() != -1) {
@@ -137,10 +131,6 @@ public class Music extends AppCompatActivity {
             ScrollView layout1 = (ScrollView) findViewById(R.id.question5);
             layout1.setVisibility(View.GONE);
             layout.setVisibility(View.VISIBLE);
-
-
-            EditText artistInput = (EditText) findViewById(R.id.userName);
-            String username = artistInput.getText().toString();
 
 
             //Calculating the score
@@ -177,15 +167,34 @@ public class Music extends AppCompatActivity {
                 }
 
 
-
             }
+
+            EditText artistInput = (EditText) findViewById(R.id.musician);
+            String artistName = artistInput.getText().toString();
+
+            if (artistName.equalsIgnoreCase("Mozart")) {
+                score++;
+            }
+
+            CheckBox mozar = (CheckBox) findViewById(R.id.musicBox1);
+            boolean isMozart = mozar.isChecked();
+
+            CheckBox bach = (CheckBox) findViewById(R.id.musicBox2);
+            boolean isBach = bach.isChecked();
+
+            CheckBox handel = (CheckBox) findViewById(R.id.musicBox3);
+            boolean isHandel = handel.isChecked();
+
+            if(isHandel && !isBach && !isMozart){
+                score++;
+            }
+
+
 
             TextView quizScore = (TextView) findViewById(R.id.mscore);
             percent = (score * 100) / total;
             incorrect = total - score;
-            quizScore.setText( getResources().getString(R.string.congrats) + getResources().getString(R.string.scoreStat) + "\t" + percent + " %" + "\n"+ getResources().getString(R.string.correct_answers) + "\t" + score + "\n" + getResources().getString(R.string.incorrect_answers) + "\t" + incorrect + "\n");
-
-
+            quizScore.setText(getResources().getString(R.string.congrats) + getResources().getString(R.string.scoreStat) + "\t" + percent + " %" + "\n" + getResources().getString(R.string.correct_answers) + "\t" + score + "\n" + getResources().getString(R.string.incorrect_answers) + "\t" + incorrect + "\n");
 
 
         } else {

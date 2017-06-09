@@ -222,6 +222,9 @@
 
         </LinearLayout>
     </ScrollView>
+
+
+
     <!-- Score screen -->
     <ScrollView
         android:id="@+id/techScore"
@@ -248,11 +251,13 @@
                     android:id="@+id/mscore"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_margin="15dp"
+                    android:layout_marginTop="50dp"
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp"
+                    android:layout_marginBottom="20dp"
                     android:background="#8FFF"
                     android:gravity="center"
+                    android:padding="20dp"
                     android:text="@string/scoreStat"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="@color/colorPrimary" />
@@ -263,45 +268,15 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
                 android:orientation="vertical">
-
-                <EditText
-                    android:id="@+id/userName"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/name_required"
-                    android:inputType="text"
-                    android:textColor="@android:color/black"
-                    android:textSize="25dp" />
-
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-
-                <Button
-                    android:id="@+id/btnUsername"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="25dp"
-                    android:background="#8FFF"
-                    android:backgroundTint="@android:color/white"
-                    android:gravity="center"
-                    android:onClick="openScoreACt"
-                    android:text="Submit"
-                    android:textColor="@android:color/black" />
 
                 <Button
                     android:id="@+id/btnReplay"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="25dp"
+                    android:layout_marginTop="115dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
                     android:background="#8FFF"
                     android:backgroundTint="@android:color/white"
                     android:gravity="center"
@@ -309,20 +284,7 @@
                     android:text="Replay"
                     android:textColor="@android:color/black" />
 
-                <Button
-                    android:id="@+id/btnShare"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="25dp"
-                    android:background="#8FFF"
-                    android:backgroundTint="@android:color/white"
-                    android:gravity="center"
-                    android:onClick="openScoreACt"
-                    android:text="Share"
-                    android:textColor="@android:color/black" />
-
             </LinearLayout>
-
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

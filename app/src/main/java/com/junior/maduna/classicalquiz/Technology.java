@@ -73,10 +73,6 @@ public class Technology extends AppCompatActivity {
             layout.setVisibility(View.VISIBLE);
 
 
-            EditText artistInput = (EditText) findViewById(R.id.userName);
-            String username = artistInput.getText().toString();
-
-
             //Calculating the score
             if (radioGQ3.getCheckedRadioButtonId() != -1) {
                 //Access the RadioGroup view and save it to a variable.

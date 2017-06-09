@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.ScrollView;
@@ -19,12 +20,13 @@ public class Health extends AppCompatActivity {
     float incorrect = 0;
 
 
-    Editable userName;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_health);
+
+        // keyboard doesn't show when activity starts
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
     }
 
     //Replay game
@@ -52,6 +54,9 @@ public class Health extends AppCompatActivity {
     //Method to display Question 3
     //Find out to check if has selected a choice or not and if not display a toast message telling the user to select something before moving on
     public void questionThree(View view) {
+        // keyboard doesn't show when page loads starts
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
+
         RadioGroup radioGQ2 = (RadioGroup) findViewById(R.id.healthRadioGroupTwo);
         if (radioGQ2.getCheckedRadioButtonId() != -1) {
             ScrollView layout = (ScrollView) findViewById(R.id.question3);
@@ -63,6 +68,11 @@ public class Health extends AppCompatActivity {
                     "PLEASE SELECT AN OPTION BEFORE MOVING ON TO THE NEXT QUESTION", Toast.LENGTH_SHORT).show();
         }
     }
+
+
+
+
+
 
 
     //New Score method
@@ -77,10 +87,6 @@ public class Health extends AppCompatActivity {
             ScrollView layout1 = (ScrollView) findViewById(R.id.question3);
             layout1.setVisibility(View.GONE);
             layout.setVisibility(View.VISIBLE);
-
-
-            EditText artistInput = (EditText) findViewById(R.id.userName);
-            String username = artistInput.getText().toString();
 
 
             //Calculating the score

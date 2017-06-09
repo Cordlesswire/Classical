@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Classical Quiz</string>
 
-    <!-- THESE ARE STRINGS WE"LL USE IN THE .JAVA FILE FOR EASE OF ACCESS-->
-    <string name="score_summary_name">Name: </string>
+    <string name="technology">Technology</string>
+    <string name="music">Music</string>
 
 
 
@@ -26,7 +26,10 @@
     <string name="q3_3">C. Serotonin</string>
 
     <string name="quiz_four_question">What is the main ingredient in yogurt ? </string>
-    <string name="q4_1">A. Milk</string>
+    <string name="q4_1">A. Water</string>
+    <string name="q4_2">B. Yeast</string>
+    <string name="q4_3">C. Milk</string>  <!-- true-->
+
 
     <string name="quiz_five_question">What is the name of the first toothpaste ever made ? </string>
     <string name="q5_1">A. Maclean</string>
@@ -52,7 +55,9 @@
     <string name="qs3_3">C. Joseph Priestley </string>
 
     <string name="science_quiz_four_question">  _______ invented the periodic table. </string>
-    <string name="qs4_1">A. Dmitri Mendeleev</string>
+    <string name="qs4_1">A. Dmitri Mendeleev</string>  <!-- true-->
+    <string name="qs4_2">B. Albert Einstein</string>
+    <string name="qs4_3">C. Stephen Hawking</string>
 
 
     <string name="science_quiz_five_question">  Who invented the petri dish? </string>
@@ -80,6 +85,8 @@
 
     <string name="technology_quiz_four_question"> ______ invented the printing press.  </string>
     <string name="qt4_1">A. Johannes Gutenburg</string>
+    <string name="qt4_2">B. Johannes Gutenburg</string>
+    <string name="qt4_3">C. Johannes Gutenburg</string>  <!-- true-->
 
     <string name="technology_quiz_five_question"> ______ invented the calculator</string>
     <string name="qt5_1">A. Isaac Newton</string>
@@ -106,8 +113,8 @@
     <string name="music_quiz_four_question"> Which Classical artist did Einstein see as a musical physicist? </string>
     <string name="qm4_1">A. Beethoven</string>
     <string name="qm4_2">B. Joseph Haydn</string>
-    <string name="qm4_3">C. Mozart</string>
-    <string name="qm4_4">D. Sebastian Bach</string>
+    <string name="qm4_3">C. Mozart</string>  <!-- true-->
+    <string name="qm4_4">D. Bach</string>
 
     <string name="music_quiz_five_question"> Who wrote the Religious classic "Messiah" in 1741? </string>
     <string name="qm5_1">A. Wolfgang Amadeus Mozart </string>
@@ -125,19 +132,6 @@
     <string name="correct_answers">Correct answers: \n</string>
     <string name="incorrect_answers">Incorrect answers: \n</string>
 
-    <string name="name_required">Enter Name</string>
-    <string name="genius">You are a Genius!</string>
-    <string name="amateur">You Did Okay.... Want to try your luck Again?</string>
-    <string name="bad">Better luck next time... Press Retry for another go</string>
 
-
-
-    <!-- SHARE -->
-    <string name="share_title">Share your Geography Quiz results!</string>
-    <string name="share_text_hey">Hey! I\'m </string>
-    <string name="share_text_results"> and these are my Classical Quiz results: </string>
-    <string name="share_text_bye">Ok, bye!</string>
-    <string name="music">music</string>
-    <string name="technology">technology </string>
 
 </resources>

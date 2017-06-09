@@ -25,8 +25,6 @@ public class Music extends AppCompatActivity {
     float incorrect = 0;
 
 
-    Editable userName;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -82,7 +80,7 @@ public class Music extends AppCompatActivity {
         //EditText artistInput = (EditText) findViewById(R.id.musician);
          //String artistName = artistInput.getText().toString();
 
-        //check if the user has inputed something if not dont go to the next question
+        //check if the user has inputted something if not dont go to the next question
        // if (artistName.matches(" ") ) {
          //Toast.makeText(Music.this,
           //"PLEASE SELECT AN OPTION BEFORE MOVING ON TO THE NEXT QUESTION", Toast.LENGTH_SHORT).show();
@@ -98,14 +96,14 @@ public class Music extends AppCompatActivity {
 
     //Display question 5
     public void questionFive(View view) {
-        CheckBox mozar = (CheckBox) findViewById(R.id.musicBox1);
-        boolean isMozart = mozar.isChecked();
+        //CheckBox mozar = (CheckBox) findViewById(R.id.musicBox1);
+        //boolean isMozart = mozar.isChecked();
 
-        CheckBox bach = (CheckBox) findViewById(R.id.musicBox2);
-        boolean isBach = bach.isChecked();
+        //CheckBox bach = (CheckBox) findViewById(R.id.musicBox2);
+        //boolean isBach = bach.isChecked();
 
-        CheckBox handel = (CheckBox) findViewById(R.id.musicBox3);
-        boolean isHandel = handel.isChecked();
+       // CheckBox handel = (CheckBox) findViewById(R.id.musicBox3);
+        //boolean isHandel = handel.isChecked();
 
 
 
@@ -169,9 +167,9 @@ public class Music extends AppCompatActivity {
 
             }
 
-
-            CheckBox mozar = (CheckBox) findViewById(R.id.musicBox1);
-            boolean isMozart = mozar.isChecked();
+            //Get the users selection from the checkbox and decide if its the correct one and increment score
+            CheckBox mozart = (CheckBox) findViewById(R.id.musicBox1);
+            boolean isMozart = mozart.isChecked();
 
             CheckBox bach = (CheckBox) findViewById(R.id.musicBox2);
             boolean isBach = bach.isChecked();
@@ -183,7 +181,7 @@ public class Music extends AppCompatActivity {
                 score++;
             }
 
-
+            //Get the users input from the edittext and decide if its the correct one and increment score
             EditText artistInput = (EditText) findViewById(R.id.musician);
             String artistName = artistInput.getText().toString();
 
@@ -206,4 +204,20 @@ public class Music extends AppCompatActivity {
         }
     }
 
+
+
+    //Get users name to display when they sahre their score
+    //public void submitUsername(View view) {
+        //EditText userName = (EditText) findViewById(R.id.userName);
+        //String username = userName.getText().toString();
+
+        //check if the user has inputted something
+        // if (username.matches("") ) {
+        //Toast.makeText(Music.this,
+       // "PLEASE ENTER A VALID NAME", Toast.LENGTH_SHORT).show();
+         //} else {
+          //   Toast.makeText(Music.this,
+          //           "NAME SUCCESSFULLY STORED ", Toast.LENGTH_SHORT).show();
+       //  }
+   // }
 }

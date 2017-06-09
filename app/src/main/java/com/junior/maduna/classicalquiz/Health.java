@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.ScrollView;
@@ -15,7 +16,7 @@ import android.widget.Toast;
 
 public class Health extends AppCompatActivity {
     float score = 0;
-    float total = 3;
+    float total = 5;
     float percent = 0;
     float incorrect = 0;
 
@@ -93,14 +94,11 @@ public class Health extends AppCompatActivity {
 
     //New Score method
     public void scoreDisplay(View view) {
-
-
-
         RadioGroup radioGQ3 = (RadioGroup) findViewById(R.id.healthRadioGroupThree);
         //check if the user has selected something if not dont go to the next question
         if (radioGQ3.getCheckedRadioButtonId() != -1) {
             ScrollView layout = (ScrollView) findViewById(R.id.healthScore);
-            ScrollView layout1 = (ScrollView) findViewById(R.id.question3);
+            ScrollView layout1 = (ScrollView) findViewById(R.id.question5);
             layout1.setVisibility(View.GONE);
             layout.setVisibility(View.VISIBLE);
 
@@ -139,6 +137,31 @@ public class Health extends AppCompatActivity {
                 }
 
             }
+
+            //Get the users selection from the checkbox and decide if its the correct one and increment score
+            CheckBox wrong = (CheckBox) findViewById(R.id.healthBox1);
+            boolean isIncorrect1 = wrong.isChecked();
+
+            CheckBox correct = (CheckBox) findViewById(R.id.healthBox2);
+            boolean isCorrect = correct.isChecked();
+
+            CheckBox incorrect1 = (CheckBox) findViewById(R.id.healthBox3);
+            boolean isIncorrect = incorrect1.isChecked();
+
+            if(!isIncorrect && isCorrect && !isIncorrect1){
+                score++;
+            }
+
+
+
+            //Get the users input from the edittext and decide if its the correct one and increment score
+            EditText artistInput = (EditText) findViewById(R.id.milk);
+            String artistName = artistInput.getText().toString();
+
+            if (artistName.equalsIgnoreCase("Milk")) {
+                score++;
+            }
+
 
             TextView quizScore = (TextView) findViewById(R.id.mscore);
             percent = (score * 100) / total;

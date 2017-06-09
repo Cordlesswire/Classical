@@ -333,21 +333,21 @@
                 android:textColor="@color/colorPrimary" />
 
             <CheckBox
-                android:id="@+id/musicBox1"
+                android:id="@+id/healthBox1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:text="@string/q5_1" />
 
             <CheckBox
-                android:id="@+id/musicBox2"
+                android:id="@+id/healthBox2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:text="@string/q5_2" />
 
             <CheckBox
-                android:id="@+id/musicBox3"
+                android:id="@+id/healthBox3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
@@ -366,8 +366,6 @@
 
         </LinearLayout>
     </ScrollView>
-
-
 
 
     <!-- Score screen -->

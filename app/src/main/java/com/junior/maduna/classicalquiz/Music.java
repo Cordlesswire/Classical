@@ -205,7 +205,6 @@ public class Music extends AppCompatActivity {
     }
 
 
-
     //Get users name to display when they sahre their score
     //public void submitUsername(View view) {
         //EditText userName = (EditText) findViewById(R.id.userName);

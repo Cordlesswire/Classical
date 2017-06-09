@@ -70,7 +70,23 @@ public class Health extends AppCompatActivity {
     }
 
 
+    //Display question 4
+    public void questionFour(View view) {
+        ScrollView layout = (ScrollView) findViewById(R.id.question4);
+        ScrollView layout1 = (ScrollView) findViewById(R.id.question3);
+        layout1.setVisibility(View.GONE);
+        layout.setVisibility(View.VISIBLE);
+    }
 
+
+
+    //Display question 5
+    public void questionFive(View view) {
+        ScrollView layout = (ScrollView) findViewById(R.id.question5);
+        ScrollView layout1 = (ScrollView) findViewById(R.id.question4);
+        layout1.setVisibility(View.GONE);
+        layout.setVisibility(View.VISIBLE);
+    }
 
 
 
